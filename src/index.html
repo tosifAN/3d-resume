@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D RESUME</title>
+    <style>
+        body {
+            margin: 0
+        }
+        .p-b-c{
+            position:absolute;
+            left:50%;
+            top:50%;
+            transform:translate(-50%,-50%);
+            width:100%;
+            height:100%;
+            background-color: rgb(8, 9, 9);
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+        }
+        #p-b{
+            width:30%;
+            margin-top: 0.5%;
+            height:2%;
+        }
+        label{
+            color:rgb(0, 242, 242);
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="p-b-c">
+        <label for="p-b">Loading...</label>
+        <progress id="p-b" value="0" max="100"></progress>
+    </div>
+    <script src="./js/scripts.js" type="module"></script>
+</body>
+</html>
